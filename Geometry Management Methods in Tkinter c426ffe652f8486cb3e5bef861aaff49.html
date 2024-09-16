@@ -1,8 +1,10 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Geometry Management Methods in Tkinter</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
+
 html {
 	-webkit-print-color-adjust: exact;
+	
 }
 * {
 	box-sizing: border-box;
@@ -681,7 +683,9 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="c426ffe6-52f8-486c-b3e5-bef861aaff49" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🚀</span></div><h1 class="page-title">Geometry Management Methods in Tkinter</h1><p class="page-description"></p></header><div class="page-body"><p id="1012e6f0-3694-80cd-9ada-f9e6e169d101" class="">
+</style></head><body>
+	<button class="btn btn-primary" onclick="goBack()">Go Back</button>
+	<article id="c426ffe6-52f8-486c-b3e5-bef861aaff49" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🚀</span></div><h1 class="page-title">Geometry Management Methods in Tkinter</h1><p class="page-description"></p></header><div class="page-body"><p id="1012e6f0-3694-80cd-9ada-f9e6e169d101" class="">
 </p><p id="1012e6f0-3694-80c9-be4c-f6c63d8fa5e9" class="">In Tkinter, there are three main methods to position widgets: <code><strong>pack()</strong></code>, <code><strong>grid()</strong></code>, and <code><strong>place()</strong></code>.</p><h3 id="7dfd90a6-d528-43fc-adf0-ea616bed8759" class=""><code>grid()</code> Method</h3><p id="824f3e10-2f63-4238-954f-3eec65c39a5d" class="">The <code>grid()</code> method arranges widgets in a table-like structure. It places widgets in a grid by specifying row and column indices.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1012e6f0-3694-80b3-b952-c3df1e3340d8" class="code"><code class="language-Python"># Create two labels and two entry fields
 label1 = tk.Label(root, text=&quot;First Name&quot;)
 label2 = tk.Label(root, text=&quot;Last Name&quot;)
@@ -703,4 +707,12 @@ button2 = tk.Button(root, text=&quot;Relative Position&quot;)
 
 # Place the button at 50% width and 75% height of the window
 button2.place(relx=0.5, rely=0.75)
-</code></pre><p id="519d2f2d-4a22-4b33-aaed-3f4d4ec1350c" class=""><strong>Explanation</strong>:</p><ul id="1012e6f0-3694-80e4-a311-ffb001ba50e0" class="bulleted-list"><li style="list-style-type:disc"><code>relx=0.5</code> places the widget at 50% of the window&#x27;s width, while <code>rely=0.75</code> places it at 75% of the window&#x27;s height.</li></ul><h3 id="263139f4-11a1-4008-8557-fa04feb96b23" class="">Summary:</h3><ul id="0fc5d38d-3b51-48a9-8d46-fde65be7e16b" class="bulleted-list"><li style="list-style-type:disc"><code><strong>pack()</strong></code>: Simple and quick for arranging widgets vertically or horizontally.</li></ul><ul id="1012e6f0-3694-8001-817f-ea1f1730cdf8" class="bulleted-list"><li style="list-style-type:disc"><code><strong>grid()</strong></code>: Ideal for placing widgets in rows and columns like a table.</li></ul><ul id="1012e6f0-3694-8066-ac6d-c865d1dac6d0" class="bulleted-list"><li style="list-style-type:disc"><code><strong>place()</strong></code>: Best for precise control over widget positioning using absolute or relative coordinates.</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+</code></pre><p id="519d2f2d-4a22-4b33-aaed-3f4d4ec1350c" class=""><strong>Explanation</strong>:</p><ul id="1012e6f0-3694-80e4-a311-ffb001ba50e0" class="bulleted-list"><li style="list-style-type:disc"><code>relx=0.5</code> places the widget at 50% of the window&#x27;s width, while <code>rely=0.75</code> places it at 75% of the window&#x27;s height.</li></ul><h3 id="263139f4-11a1-4008-8557-fa04feb96b23" class="">Summary:</h3><ul id="0fc5d38d-3b51-48a9-8d46-fde65be7e16b" class="bulleted-list"><li style="list-style-type:disc"><code><strong>pack()</strong></code>: Simple and quick for arranging widgets vertically or horizontally.</li></ul><ul id="1012e6f0-3694-8001-817f-ea1f1730cdf8" class="bulleted-list"><li style="list-style-type:disc"><code><strong>grid()</strong></code>: Ideal for placing widgets in rows and columns like a table.</li></ul><ul id="1012e6f0-3694-8066-ac6d-c865d1dac6d0" class="bulleted-list"><li style="list-style-type:disc"><code><strong>place()</strong></code>: Best for precise control over widget positioning using absolute or relative coordinates.</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span>
+<script>
+	function goBack() {
+	  window.history.back();
+	}
+  </script> <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></body></html>
